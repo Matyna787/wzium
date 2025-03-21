@@ -28,7 +28,7 @@ var host = builder.Build()
     .AddSlashCommand("kiwuś", "Kiwuś!", () => new InteractionMessageProperties().WithAttachments([new AttachmentProperties("kiwus.png", new MemoryStream(kiwuś, 0, kiwuś.Length))]))
     .AddSlashCommand("gajul", "Gajul!", () => new InteractionMessageProperties().WithAttachments([new AttachmentProperties("gajul.png", new MemoryStream(gajul, 0, gajul.Length))]))
     .AddSlashCommand("kotki", "Kotki!", () => new InteractionMessageProperties().WithAttachments([new AttachmentProperties("kotki.png", new MemoryStream(kotki, 0, kotki.Length))]))
-     .AddSlashCommand("wzium", "Wzium!", () => new InteractionMessageProperties().WithAttachments([new AttachmentProperties("wzium_new.png", new MemoryStream(wzium_new, 0, wzium_new.Length))]))
+    .AddSlashCommand("wzium", "Wzium!", () => new InteractionMessageProperties().WithAttachments([new AttachmentProperties("wzium_new.png", new MemoryStream(wzium_new, 0, wzium_new.Length))]))
     .UseGatewayEventHandlers();
 
 await host.RunAsync();
