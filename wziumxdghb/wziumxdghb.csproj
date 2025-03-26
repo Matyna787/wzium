@@ -16,6 +16,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Update="backup%27owy pimpek.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
     <None Update="gajul.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
