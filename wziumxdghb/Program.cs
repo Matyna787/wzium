@@ -3,7 +3,6 @@ using NetCord.Hosting.Gateway;
 using NetCord.Hosting.Services.ApplicationCommands;
 using NetCord.Rest;
 using System.Data;
-using System.IO.Pipelines;
 
 var builder = Host.CreateDefaultBuilder(args)
     .UseDiscordGateway()
@@ -34,4 +33,4 @@ var host = builder.Build()
     .AddSlashCommand("backupowy_pimpek", "Backup'owy_pimpek!", () => new InteractionMessageProperties().WithAttachments([new AttachmentProperties("backupowy pimpek.png", new MemoryStream(backupowy_pimpek, 0, backupowy_pimpek.Length))]))
     .UseGatewayEventHandlers();
 
-    await host.RunAsync();
+await host.RunAsync();
