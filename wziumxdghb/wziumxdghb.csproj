@@ -28,6 +28,9 @@
     <None Update="appsettings.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
+    <None Update="kocimiętka.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
     <None Update="kotki.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>

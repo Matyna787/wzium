@@ -14,6 +14,7 @@ var gajul = File.ReadAllBytes("gajul.png");
 var kotki = File.ReadAllBytes("kotki.png");
 var wzium_new = File.ReadAllBytes("wzium_new.png");
 var backupowy_pimpek = File.ReadAllBytes("backup'owy pimpek.png");
+var kocimiętka = File.ReadAllBytes("kocimiętka.png");
 
 
 var host = builder.Build()
@@ -31,6 +32,7 @@ var host = builder.Build()
     .AddSlashCommand("kotki", "Kotki!", () => new InteractionMessageProperties().WithAttachments([new AttachmentProperties("kotki.png", new MemoryStream(kotki, 0, kotki.Length))]))
     .AddSlashCommand("wzium", "Wzium!", () => new InteractionMessageProperties().WithAttachments([new AttachmentProperties("wzium_new.png", new MemoryStream(wzium_new, 0, wzium_new.Length))]))
     .AddSlashCommand("backupowy_pimpek", "Backup'owy_pimpek!", () => new InteractionMessageProperties().WithAttachments([new AttachmentProperties("backupowy pimpek.png", new MemoryStream(backupowy_pimpek, 0, backupowy_pimpek.Length))]))
+     .AddSlashCommand("kocimiętka", "Kocimiętka!", () => new InteractionMessageProperties().WithAttachments([new AttachmentProperties("kocimiętka.png", new MemoryStream(kocimiętka, 0, kocimiętka.Length))]))
     .UseGatewayEventHandlers();
 
 await host.RunAsync();
